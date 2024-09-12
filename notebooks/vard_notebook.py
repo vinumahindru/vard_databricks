@@ -10,11 +10,12 @@ from pyspark.sql.functions import *
 
 df = spark.read.table("samples.nyctaxi.trips").orderBy("fare_amount", ascending=False).filter("fare_amount > 0")
 
-df.limit(10).display()
+df.limit(20).display()
 
 # COMMAND ----------
 
-dbutils.
+%sh
+ls -lrt
 
 # COMMAND ----------
 
