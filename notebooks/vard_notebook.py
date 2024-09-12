@@ -14,11 +14,14 @@ df.limit(20).display()
 
 # COMMAND ----------
 
-%sh
-ls -lrt
+# MAGIC %sh
+# MAGIC ls -lrt
+# MAGIC
 
 # COMMAND ----------
 
-# MAGIC %sh
+# MAGIC %sql
 # MAGIC
+# MAGIC select  *
+# MAGIC from    samples.tpc.orders o
 # MAGIC
